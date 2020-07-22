@@ -1,0 +1,88 @@
+body, html
+{
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+    box-sizing: border-box;
+}
+
+body
+{
+
+    background: white;
+    background: radial-gradient(circle, rgba(6, 8, 36, 0.815) 0%, rgb(0, 0, 0) 100%);
+    border:20px double white;
+    border-radius: 34px 34px 34px 34px;
+    -moz-border-radius: 34px 34px 34px 34px;
+    -webkit-border-radius: 34px 34px 34px 34px;
+
+}
+
+.container
+{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content:space-evenly;
+    justify-content:stretch;
+    height:100%;
+    width:100%;
+}
+
+#blaze 
+{
+    text-align:center;
+    margin: 0 auto;
+    margin-bottom:7%;
+    padding:1%;
+    margin-top:2%;
+    font-size:4em;
+    color:white;
+    font-family: 'Cinzel Decorative', cursive;    
+    transition:0.3s;
+    text-decoration:underline;
+}
+
+#blaze:hover
+{
+    color:black;
+    text-decoration:overline;
+}
+
+#image
+{
+    text-align:center;
+    margin: 0 auto; 
+    padding:1%;
+    transition:0.6s;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+}
+
+#description
+{
+    text-align:center;
+    margin: 0 auto; 
+    padding-left:3%;
+    padding-right:3%;
+    margin-top:3%;
+    font-size:1.6em;
+    color:white;
+    font-family: 'Reenie Beanie', cursive;
+    opacity:0.0;
+    transition:.5s;
+}
+
+img:hover
+{
+    -webkit-box-shadow: 1px 1px 20px 0px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 1px 1px 20px 0px rgba(255, 255, 255, 0.75);
+    box-shadow: 1px 1px 20px 0px rgba(255, 255, 255, 0.75);
+}
+
+img:hover + #description 
+{
+    opacity:1.0;
+}
